@@ -1,0 +1,46 @@
+---
+const personalImageAlt = "Miguel Ángel";
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Me llamo Rafael Pacheco, soy estudiante de Ingeniería de Software en la
+      Universidad Peruana de Ciencias Aplicadas (UPC). <strong
+        >Estoy en séptimo ciclo y me especializo en programación y desarrollo
+        web</strong
+      >.
+    </p>
+
+    <p>
+      He trabajado en proyectos como un <strong
+        >acortador de URLs con estadísticas, desarrollado con Vue 3 y FastAPI,
+        priorizando una experiencia fluida y sencilla para los usuarios.
+      </strong>También estoy creando mi portafolio personal con Astro y Tailwind
+      CSS, buscando un diseño limpio y optimizado.
+    </p>
+
+    <p>
+      Más allá del código, me interesa la <strong
+        >arquitectura del software, la optimización del rendimiento web y el
+        diseño de bases de datos.
+      </strong>Me gusta explorar la mejor manera de estructurar la información
+      para que las aplicaciones sean escalables y eficientes. Siempre estoy
+      aprendiendo y creando proyectos que me permitan mejorar mis habilidades en
+      estos ámbitos.
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/me.png"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>

@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Ingenieria de Software",
+    company: "Universidad Peruana de Ciencias Aplicadas",
+    description:
+      "Estudiante de Ingeniería de Software en la UPC. Actualmente en el 7mo ciclo. Desarrollo de aplicaciones web y móviles. Conocimientos en React, Node.js, Express, MongoDB, Firebase, entre otros.",
+    link: "https://www.upc.edu.pe/",
+  },
+  {
+    date: "Septiembre 2020",
+    title: "Ingles Intermedio",
+    company: "ICPNA",
+    description:
+      "Estudiante de inglés en el ICPNA. Actualmente en el nivel intermedio. Conocimientos en gramática, vocabulario, listening, speaking, reading y writing.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
